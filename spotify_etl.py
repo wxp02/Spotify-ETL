@@ -10,8 +10,8 @@ from spotipy.oauth2 import SpotifyOAuth
 
 # Connecting to Spotify API and retrieving the json file containing information of my 50 most recently played tracks
 def api_to_json():
-    client_id = '0c9b9c35db26487c9d06af0683749ea5'
-    client_secret = '120bbef938a24ba8a4cba9a6c3e68e59'
+    client_id = ''
+    client_secret = ''
     redirect_uri = 'http://localhost:8888/callback'
     scope = 'user-read-recently-played'
     auth_manager = SpotifyOAuth(client_id=client_id, client_secret=client_secret, redirect_uri=redirect_uri, scope=scope)
